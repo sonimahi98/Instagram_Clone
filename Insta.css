@@ -6,7 +6,7 @@
 }
 .left-panel{
     min-height: 100%;
-    width:15.1rem;
+    width: 15.3rem;
     /* background-color: blueviolet; */
     position:fixed;
     display: flex;
@@ -48,22 +48,6 @@
     margin-left: 16px;
 }
 
-/* box3 */
-.search-logo{
-    display: flex;
-    align-items: center;
-    height:24px;
-    width:24px;
-    margin-left: 12px;
-}
-
-.search-logo i{
-    font-size: 1.5rem;
-}
-.search-logo p{
-    margin-left: 21px;
-}
-
 /* boxall */
 .explore-logo{
     display: flex;
@@ -95,4 +79,13 @@ margin-left: 12px;
 }
 .profile-logo p{
     margin-left: 21px;
+}
+
+.overlay{
+    height:100%;
+    width:100%;
+}
+.overlay:hover{
+    background-color: rgb(240, 244, 243);
+    border-radius: 4px;
 }
