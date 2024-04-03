@@ -6,18 +6,20 @@
 }
 
 #parent-div{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
    
 }
 .left-panel{
-    min-height: 100vh;
+    height: 100vh;
     width: 19vw;
-    position:fixed;
+    position:sticky; 
+    top:0rem;
     display: flex;
+    background-color:blueviolet;
     flex-direction: column;
     justify-content: space-evenly;
     padding:0px 15px 1vh ;
@@ -32,7 +34,7 @@
 }
 
 .insta-logo>.logo{
-    background-image: url(Instagram_logo.svg.png);
+    background-image: url(./images/Instagram_logo.svg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -65,14 +67,46 @@
 /* middle-panel */
 
 .middle-panel{
-    height:100vh;
-    width:75vw;
+    min-height:100vh;
+    height:auto;
+    width:50vw;
     background-color: brown;
 }
 
+/* Right-panel */
+
 .right-panel{
     height:100vh;
-    width: 25vw;
+    width: 30vw;
     background-color: blue;
+    margin-top:2rem;
+}
+.right-panel-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom:1rem;
+}
+.inner-items>i{
+    font-size: 1.6rem;
+    margin: 0 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.suggested-panel{
+display: flex;
+justify-content: space-around;
+margin:1rem 0 0.5rem 0;
+}
+
+.inner-items{
+    display:flex;
+    
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
